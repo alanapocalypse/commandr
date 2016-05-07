@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<body>
+  <%= form_tag rooms_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Find Room", :name => nil %>
+    </p>
+  <% end %>
+  <%= link_to 'Create new room', new_user_path %>
+</body>
+
